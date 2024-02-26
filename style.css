@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(media/TR-tr-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  height: 644px;
+  position: relative;
+}
+.main .box {
+  height: 644px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 0.68;
+}
+nav {
+  max-width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 100px;
+}
+.main img {
+  height: 100px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link select {
+  border: 1px solid whitesmoke;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.btn {
+  margin-left: 15px;
+  border: 1px solid red;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  z-index: 10;
+  cursor: pointer;
+}
+.hero {
+  height: calc(100% - 100px);
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  gap: 23px;
+  z-index: 10;
+}
+.hero :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+  text-align: center;
+}
+.hero :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.hero :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-buttons input {
+  height: 60px;
+  width: 400px;
+  opacity: 0.5;
+  background-color: #1d2533;
+  border-radius: 5px;
+  color: white;
+}
+.hero-buttons input:focus {
+  opacity: 1;
+}
+input::placeholder {
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn-second {
+  height: 60px;
+}
+.seperation {
+  background-color: rgb(46, 44, 44);
+  height: 7px;
+  position: relative;
+  z-index: 20;
+}
+.device {
+  display: flex;
+  max-width: 70vw;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: auto;
+  padding: auto;
+  height: 650px;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+.device .information :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.device .information :nth-child(2) {
+  font-size: 24px;
+}
+.tv {
+  position: relative;
+  margin-left: 150px;
+}
+.tv img {
+  position: relative;
+  width: 520px;
+  z-index: 10;
+}
+.tv video {
+  position: absolute;
+  right: 0;
+  top: 79px;
+  width: 450px;
+}
+.mobile {
+  height: 400px;
+}
+.mobile-img img {
+  height: 300px;
+}
+.pc {
+  display: flex;
+  position: relative;
+  margin-left: 150px;
+}
+.pc img {
+  position: relative;
+  width: 550px;
+  z-index: 10;
+}
+.pc video {
+  position: absolute;
+  width: 350px;
+  margin: 0px 100px;
+  height: 300px;
+}
+.kids img {
+  height: 350px;
+}
+.fqa {
+  color: white;
+  padding: 34px;
+}
+.fqa h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+.faqbox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  font-size: 24px;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+.faqbox:hover {
+  background-color: #444444;
+}
+.fqa h3 {
+  margin: 10px;
+  padding: 5px;
+  font-weight: 400;
+}
+.buttonsss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsss input {
+  height: 60px;
+  width: 400px;
+  border-radius: 5px;
+}
+footer {
+  max-width: 60vw;
+  color: #b3b3b3;
+  margin: auto;
+  padding: 60px;
+}
+footer .questions {
+  padding: 34px 0;
+  font-size: 18px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer a {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+@media screen and (max-width: 1300px) {
+    nav {
+      max-width: 90vw;
+    }
+    .device {
+      flex-wrap: wrap;
+    }
+    .tv img {
+        right: 5rem;
+    }
+    .tv video {
+      right: 5rem;  
+      }
+    .mobile{
+        height: 600px;
+    }
+    .pc img{
+        right: 5rem;
+    }
+    .pc video{
+        right: 5rem;
+    }
+    .kids img{
+        height: 270px;
+        width: 270px;
+    }
+    .hero > :nth-child(1) {
+      font-size: 30px;
+    }
+    .hero > :nth-child(2) {
+      font-size: 18px;
+    }
+    .hero > :nth-child(3) {
+      font-size: 18px;
+    }
+    .hero-buttons {
+      flex-direction: column;
+    }
+    .device .information :nth-child(1) {
+      font-size: 30px;
+    }
+    .device .information:nth-child(2) {
+      font-size: 18px;
+    }
+    .fqa h2 {
+      font-size: 30px;
+    }
+    .faqbox {
+      font-size: 18px;
+    }
+    .footer {
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+  }
